@@ -1,0 +1,48 @@
+# Dependencies
+# --------------
+node_modules/
+bower_components/
+
+
+# Generated
+# ---------------
+.sass-cache/
+tmp
+.tmp/
+dist/
+!.gitkeep
+
+
+# Packages and Logs
+# ---------------
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.msi
+*.log
+*.sql
+*.sqlite
+
+
+# Private
+# ---------------
+*private*
+.env
+.dev/
+.des/
+
+
+# Operating System
+# ---------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lnk
