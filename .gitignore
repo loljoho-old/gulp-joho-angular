@@ -29,9 +29,10 @@ dist/
 *.sqlite
 
 
-# Private
+# Private and Misc
 # ---------------
 *private*
+.yo-rc.json
 .env
 .dev/
 .des/
