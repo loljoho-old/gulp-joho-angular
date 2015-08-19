@@ -11,6 +11,8 @@ var $ = require('gulp-load-plugins')({
 gulp.task('partials', function () {
   return gulp.src([
     path.join(conf.paths.src, '/app/**/*.html'),
+    // Add Bootstrap Ignore
+    path.join('!' + conf.paths.src, 'app/core/style/bootstrap/**/*.html'),
     path.join(conf.paths.tmp, '/serve/app/**/*.html')
   ])
     .pipe($.minifyHtml({
@@ -64,7 +66,11 @@ gulp.task('html', ['inject', 'partials'], function () {
     .pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
 });
 gulp.task('images', function () {
-  return gulp.src(path.join(conf.paths.src, '/assets/images/**/*'))
+  return gulp.src([
+      path.join(conf.paths.src, '/assets/images/**/*'),
+      // Add Bootstrap Ignore
+      path.join('!' + conf.paths.src, 'app/core/style/bootstrap/**/*.{eot,svg,ttf,woff,woff2}')
+    ])
     .pipe($.imagemin({
       optimizationLevel: 3,
       progressive: true,
@@ -89,6 +95,8 @@ gulp.task('other', function () {
 
   return gulp.src([
     path.join(conf.paths.src, '/**/*'),
+    // Add Bootstrap Ignore
+    path.join('!' + conf.paths.src, 'app/core/style/bootstrap/**/*'),
     path.join('!' + conf.paths.src, '/**/*.{html,css,js,scss,jpg,png,gif,svg}')
   ])
     .pipe(fileFilter)

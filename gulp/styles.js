@@ -18,8 +18,9 @@ gulp.task('styles', function () {
 
   var injectFiles = gulp.src([
     path.join(conf.paths.src, '/app/**/*.scss'),
+    // Add Core Ignore
     path.join('!' + conf.paths.src, 'app/core/**/*.scss'),
-    path.join('!' + conf.paths.src, '/app/main.scss')
+    path.join('!' + conf.paths.src, '/app/index.scss')
   ], { read: false });
 
   var injectOptions = {
@@ -34,7 +35,7 @@ gulp.task('styles', function () {
 
 
   return gulp.src([
-    path.join(conf.paths.src, '/app/main.scss')
+    path.join(conf.paths.src, '/app/index.scss')
   ])
     .pipe($.inject(injectFiles, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))
