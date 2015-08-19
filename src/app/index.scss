@@ -1,9 +1,27 @@
+// Main Sass File
+//
+// Imports
+
+
+// Custom Partials
+// ------------------------------
+
 @import 'core/style/variables';
 @import 'core/style/theme';
 @import 'core/style/mixins';
 @import 'core/style/typography';
 @import 'core/style/base';
 @import 'core/style/layout';
+
+
+// Vendor Partials
+// ------------------------------
+@import 'core/style/bootstrap';
+
+
+
+// Wiredep / Inject
+// ------------------------------
 
 /* Do not remove this comments bellow. It's the markers used by wiredep to inject
    sass dependencies when defined in the bower.json of your dependencies */
@@ -14,5 +32,3 @@
    all your sass files automatically */
 // injector
 // endinjector
-
-@import 'core/style/normalize';
