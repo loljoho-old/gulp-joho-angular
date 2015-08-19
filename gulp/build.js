@@ -69,7 +69,7 @@ gulp.task('images', function () {
   return gulp.src([
       path.join(conf.paths.src, '/assets/images/**/*'),
       // Add Bootstrap Ignore
-      path.join('!' + conf.paths.src, 'app/core/style/bootstrap/**/*.{eot,svg,ttf,woff,woff2}')
+      path.join('!' + conf.paths.src, 'app/core/style/bootstrap/**/*.*')
     ])
     .pipe($.imagemin({
       optimizationLevel: 3,
