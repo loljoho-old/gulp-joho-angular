@@ -1,14 +1,12 @@
 /* Bootstrap v4.0.0-alpha
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-// Enable Flexbox
-$enable-flex: true;
-
 
 // Core variables and mixins
 // ------------------------------
 
-@import '../../../lib/bootstrap/scss/variables';
+// Configure Bootstrap in core/style/_bootstrap-variables.scss
+// @import '../../../lib/bootstrap/scss/variables';
 @import '../../../lib/bootstrap/scss/mixins';
 
 

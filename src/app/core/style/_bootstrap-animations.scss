@@ -1,0 +1,17 @@
+
+
+// Navbar Collapse Animations
+// ------------------------------
+.collapse.am-collapse {
+  animation-duration: .4s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+  overflow: hidden;
+  &.in-remove {
+    animation-name: collapse;
+    display: block;
+  }
+  &.in-add {
+    animation-name: expand;
+  }
+}

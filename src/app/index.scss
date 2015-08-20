@@ -14,8 +14,11 @@
 @import 'core/style/layout';
 
 
-// Vendor Partials
+// Bootstrap Partials
 // ------------------------------
+
+@import 'core/style/bootstrap-variables';
+@import 'core/style/bootstrap-animations';
 @import 'core/style/bootstrap';
 
 
