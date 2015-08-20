@@ -1,5 +1,21 @@
 
 
+// Navbar Collapse Icons
+// ------------------------------
+
+.navbar,
+.navbar-collapse {
+  i {
+    &.fa {
+
+    }
+    &.material-icons {
+      font-size: 21px;
+    }
+  }
+}
+
+
 // Navbar Collapse Animations
 // ------------------------------
 
