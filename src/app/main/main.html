@@ -1,0 +1,129 @@
+<!-- Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div ng-include="'./app/main/layout/navbar.html'"
+     class="pos-f-t"
+     bs-collapse>
+</div>
+
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Album example</h1>
+    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+    <p>
+      <a href="#" class="btn btn-primary">Main call to action</a>
+      <a href="#" class="btn btn-secondary">Secondary action</a>
+    </p>
+  </div>
+</section>
+
+<section class="card-grid" id="contact">
+  <div class="container">
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+        <div class="card">
+          <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" class="card-img-top" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 0 seconds ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" class="card-img-top" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 0 seconds ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" class="card-img-top" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 0 seconds ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="card-grid text-muted" id="demo">
+  <div class="container">
+
+    <div class="row">
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="demo-card">
+        <img src="http://placehold.it/320x180/55595c/eceeef?text=Thumbnail" alt="Card image cap">
+        <p class="demo-card-text">This is a wider demo-card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<section id="techs">
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+        <div class="thumbnail">
+          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+          <div class="caption">
+            <h3>{{ awesomeThing.title }}</h3>
+            <p>{{ awesomeThing.description }}</p>
+            <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <hr>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+  </div>
+</footer>
+
