@@ -3,7 +3,8 @@
 
   angular
     .module('joho.core')
-    .config(config);
+    .config(config)
+    .config(bsConfig);
 
   /** @ngInject */
   function config($logProvider, toastr) {
@@ -15,6 +16,13 @@
     toastr.options.positionClass = 'toast-top-right';
     toastr.options.preventDuplicates = true;
     toastr.options.progressBar = true;
+  }
+
+  /** @ngInject */
+  function bsConfig($collapseProvider) {
+    angular.extend($collapseProvider.defaults, {
+      startCollapsed: true
+    });
   }
 
 })();

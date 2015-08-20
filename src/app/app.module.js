@@ -1,8 +1,20 @@
 (function() {
   'use strict';
 
-  angular
-    .module('joho', [
-      'joho.core']);
+  angular.module('joho', [
+
+    // Core Module
+    // ------------------------------
+    'joho.core',
+
+
+    // Feature Modules
+    // ------------------------------
+
+    'joho.demo'
+
+
+  ]);
+
 
 })();

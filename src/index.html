@@ -1,50 +1,102 @@
 <!doctype html>
-<html class="no-js" ng-app="joho">
-  <head>
-    <meta charset="utf-8">
-    <title>joho</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<html lang="en"
+      class="no-js"
+      ng-app="joho">
+<head>
+  <!-- Meta Tags
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <meta name="description" content="Portfolio for New York-based web developer Jonathan Ho">
+  <meta name="author" content="Jonathan Ho">
 
-    <!-- build:css({.tmp/serve,src}) styles/app.css -->
-    <!-- inject:css -->
-    <!-- css files will be automatically insert here -->
-    <!-- endinject -->
-    <!-- endbuild -->
+  <!-- Page Title
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>
+    Jonathan Ho
+  </title>
 
-    <!-- build:js(src) scripts/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <!-- Favicon & Icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <div ui-view></div>
+  <!-- Vendor Stylesheets
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js(src) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- run `gulp inject` to automatically populate bower script dependencies -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- Custom Stylesheets
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- endbuild -->
 
-    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-    <!-- inject:js -->
-    <!-- js files will be automatically insert here -->
-    <!-- endinject -->
+  <!-- Modernizr
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- build:js(src) scripts/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<!--  _____                _   _   _
+     |  ___| ___   _ __   | | | | (_)  _ __   ___   _
+     | |_   / _ \ | '__|  | |_| | | | | '__| / _ \ (_)
+     |  _| | (_) || |     |  _  | | | | |   |  __/  _
+     |_|    \___/ |_|     |_| |_| |_| |_|    \___| (_)
+                                  _                           _     _                         _    _
+                                 | |                         | |   | |                       | |  | |
+                                 | |   ___    _ __     __ _  | |_  | |__     __ _   _ __     | |__| |   ___
+                             _   | |  / _ \  | '_ \   / _` | | __| | '_ \   / _` | | '_ \    |  __  |  / _ \
+                            | |__| | | (_) | | | | | | (_| | | |_  | | | | | (_| | | | | |   | |  | | | (_) |
+                             \____/   \___/  |_| |_|  \__,_|  \__| |_| |_|  \__,_| |_| |_|   |_|  |_|  \___/
+                            ________________________________________________________________________________
+                           |________________________________________________________________________________|
+__      __   _     ___              _                         _  _            __   __       _     _  ___   __
+\ \    / /__| |__ |   \ _____ _____| |___ _ __  ___ _ _   _  | \| |_____ __ __\ \ / /__ _ _| |__ | \| \ \ / /
+ \ \/\/ / -_) '_ \| |) / -_) V / -_) / _ \ '_ \/ -_) '_| (_) | .` / -_) V  V / \ V / _ \ '_| / / | .` |\ V /
+  \_/\_/\___|_.__/|___/\___|\_/\___|_\___/ .__/\___|_|       |_|\_\___|\_/\_/   |_|\___/_| |_\_\ |_|\_| |_|
+                                         |_|                                                              -->
+<body>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-    <!-- inject:partials -->
-    <!-- angular templates will be automatically converted in js and inserted here -->
-    <!-- endinject -->
-    <!-- endbuild -->
 
-  </body>
+
+  <!-- ————————————————————————————————————————————————————— -->
+
+
+  <div ng-view>
+
+  </div>
+
+
+  <!-- ————————————————————————————————————————————————————— -->
+
+
+
+  <!-- Vendor Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- build:js(src) scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Custom Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+  <!-- inject:js -->
+  <!-- endinject -->
+
+  <!-- Angular Partials
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- inject:partials -->
+  <!-- endinject -->
+  <!-- endbuild -->
+
+</body>
 </html>
